@@ -4,3 +4,10 @@ php:
 - 5.4
 - hhvm
 script: phpunit Test.php
+notifications:
+  email: false
+  irc:
+    channels:
+    - chat.freenode.net#ublab
+    template:
+    - "%{repository}/%{branch} (%{commit} - %{author}): %{build_url}: %{message}"
